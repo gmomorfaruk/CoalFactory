@@ -64,7 +64,7 @@ export default function AdminLoginPage() {
     <div className="min-h-screen bg-charcoal-950 flex flex-col justify-center py-12 sm:px-6 lg:px-8 bg-coal-grid">
       <div className="sm:mx-auto sm:w-full sm:max-w-md text-center">
         <div className="w-14 h-14 rounded-2xl bg-charcoal-850 border border-charcoal-700 flex items-center justify-center text-ember-500 mx-auto mb-4 shadow-xl">
-          <Flame className="w-8 h-8" />
+          <Shield className="w-8 h-8" />
         </div>
         <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
           HASIB ENTERPRISES
