@@ -373,7 +373,7 @@ export const initialHomepageContent: HomepageContent = {
   announcement_text_bn: '🔥 বিশেষ বাল্ক পাইকারি অফার চলছে — কারখানা মূল্যে কয়লা পেতে আজই কল করুন',
   announcement_text_en: '🔥 Special wholesale bulk pricing now active — Call today for direct factory quotes',
   announcement_type: 'offer',
-  hero_title_bn: 'উন্নত মানের কাঠের কয়লা — সরাসরি কারখানা থেকে',
+  hero_title_bn: 'উন্নত মানের কাঠের কয়লা সরাসরি কারখানা থেকে',
   hero_title_en: 'Quality Wood Charcoal — Direct from Factory',
   hero_subtitle_bn: 'রেস্টুরেন্ট, বারবিকিউ ও বাণিজ্যিক প্রতিষ্ঠানের জন্য সেরা মানের কাঠের কয়লা। কোনো মধ্যস্বত্বভোগী ছাড়া সরাসরি নিজস্ব কারখানা থেকে বিশ্বস্ত সরবরাহ।',
   hero_subtitle_en: 'A Bangladesh-based wood charcoal manufacturing and supply business serving restaurants, BBQ businesses, commercial buyers, wholesalers, and distributors.',

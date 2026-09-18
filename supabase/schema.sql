@@ -111,7 +111,7 @@ create table if not exists public.homepage_content (
     announcement_text_bn text default 'রমজান উপলক্ষে বিশেষ পাইকারি অফার চলছে — আজই যোগাযোগ করুন',
     announcement_text_en text default 'Special bulk wholesale offers now active — Contact us today',
     announcement_type text default 'offer',
-    hero_title_bn text default 'উন্নত মানের কাঠের কয়লা — সরাসরি কারখানা থেকে',
+    hero_title_bn text default 'উন্নত মানের কাঠের কয়লা সরাসরি কারখানা থেকে',
     hero_title_en text default 'High Quality Wood Charcoal — Direct from Factory',
     hero_subtitle_bn text default 'রেস্টুরেন্ট, বারবিকিউ ও বাণিজ্যিক প্রতিষ্ঠানের জন্য পরিবেশবান্ধব ও টেকসই কয়লা সরবরাহ।',
     hero_subtitle_en text default 'Dependable wood charcoal supply for restaurants, BBQ eateries, and industrial buyers across Bangladesh.',
