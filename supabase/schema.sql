@@ -124,10 +124,10 @@ create table if not exists public.homepage_content (
 -- 8. SITE SETTINGS & SOCIAL LINKS TABLE
 create table if not exists public.site_settings (
     id integer primary key default 1,
-    phone_primary text default '+880 1700-000000',
-    phone_secondary text default '+880 1800-000000',
-    whatsapp_number text default '+880 1700-000000',
-    email text default 'hasibenterprises.bd@gmail.com',
+    phone_primary text default '+880 1581-291614',
+    phone_secondary text default '+880 1986-659897',
+    whatsapp_number text default '+880 1581-291614',
+    email text default 'support.hasibenterprise@gmail.com',
     office_address_bn text default 'মিরপুর, ঢাকা - ১২১৬, বাংলাদেশ',
     office_address_en text default 'Mirpur, Dhaka - 1216, Bangladesh',
     factory_address_bn text default 'ঘাটাইল, টাঙ্গাইল, বাংলাদেশ',

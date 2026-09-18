@@ -88,11 +88,11 @@ function ContactContent() {
     }
   };
 
-  const primaryPhone = settings?.phone_primary || '+880 1711-223344';
-  const secondaryPhone = settings?.phone_secondary || '+880 1811-223344';
+  const primaryPhone = settings?.phone_primary || '+880 1581-291614';
+  const secondaryPhone = settings?.phone_secondary || '+880 1986-659897';
   const rawPhone = primaryPhone.replace(/[^0-9+]/g, '');
   const rawWhatsApp = (settings?.whatsapp_number || primaryPhone).replace(/[^0-9]/g, '');
-  const email = settings?.email || 'info.hasibenterprises@gmail.com';
+  const email = settings?.email || 'support.hasibenterprise@gmail.com';
   const officeAddr = language === 'bn' ? settings?.office_address_bn : settings?.office_address_en;
   const factoryAddr = language === 'bn' ? settings?.factory_address_bn : settings?.factory_address_en;
 

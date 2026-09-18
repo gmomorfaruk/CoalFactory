@@ -18,7 +18,7 @@ export default function MobileQuickBar() {
     return () => window.removeEventListener('hasib_store_updated', handleUpdate);
   }, []);
 
-  const phone = settings?.phone_primary || '+880 1711-223344';
+  const phone = settings?.phone_primary || '+880 1581-291614';
   const rawPhone = phone.replace(/[^0-9+]/g, '');
   const whatsapp = (settings?.whatsapp_number || phone).replace(/[^0-9]/g, '');
 

@@ -18,9 +18,9 @@ export default function Footer() {
     return () => window.removeEventListener('hasib_store_updated', handleUpdate);
   }, []);
 
-  const phonePrimary = settings?.phone_primary || '+880 1711-223344';
-  const phoneSecondary = settings?.phone_secondary || '+880 1811-223344';
-  const email = settings?.email || 'info.hasibenterprises@gmail.com';
+  const phonePrimary = settings?.phone_primary || '+880 1581-291614';
+  const phoneSecondary = settings?.phone_secondary || '+880 1986-659897';
+  const email = settings?.email || 'support.hasibenterprise@gmail.com';
   const officeAddr = language === 'bn' ? settings?.office_address_bn : settings?.office_address_en;
   const factoryAddr = language === 'bn' ? settings?.factory_address_bn : settings?.factory_address_en;
   const socials = settings?.social_links || {};

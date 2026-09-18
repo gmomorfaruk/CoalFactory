@@ -34,7 +34,7 @@ const STORAGE_KEYS = {
   REVIEWS: 'hasib_reviews_v1',
   MESSAGES: 'hasib_messages_v1',
   HOMEPAGE: 'hasib_homepage_v1',
-  SETTINGS: 'hasib_settings_v1',
+  SETTINGS: 'hasib_settings_v2',
   MEDIA: 'hasib_media_v1',
   AUTH: 'hasib_admin_auth_v1'
 };

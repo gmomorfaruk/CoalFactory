@@ -33,7 +33,7 @@ export default function Navbar() {
     { href: '/contact', label: t.nav.contact },
   ];
 
-  const primaryPhone = settings?.phone_primary || '+880 1711-223344';
+  const primaryPhone = settings?.phone_primary || '+880 1581-291614';
 
   return (
     <header className="sticky top-0 z-40 w-full border-b border-charcoal-700/60 bg-charcoal-950/90 backdrop-blur-md">

@@ -144,7 +144,7 @@ export default function ProductCard({ product, onQuickOrder }: ProductCardProps)
             </Link>
 
             <a
-              href={`https://wa.me/8801711223344?text=${encodeURIComponent(
+              href={`https://wa.me/8801581291614?text=${encodeURIComponent(
                 language === 'bn' 
                   ? `আসসালামু আলাইকুম, আমি ${name} সম্পর্কে জানতে আগ্রহী।` 
                   : `Hello, I would like to inquire about ${name}.`

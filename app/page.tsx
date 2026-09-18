@@ -73,7 +73,7 @@ export default function HomePage() {
     : (content?.hero_subtitle_en || t.hero.subtitle);
 
   const heroImage = content?.hero_image_url || 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1600&auto=format&fit=crop';
-  const primaryPhone = settings?.phone_primary || '+880 1711-223344';
+  const primaryPhone = settings?.phone_primary || '+880 1581-291614';
   const rawPhone = primaryPhone.replace(/[^0-9+]/g, '');
 
   const iconMap: Record<string, React.ReactNode> = {

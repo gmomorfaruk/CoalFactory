@@ -74,7 +74,7 @@ export default function ProductDetailPage() {
   const applications = language === 'bn' ? product.applications_bn : product.applications_en;
   const hasOffer = product.offer_price !== null && product.offer_price !== undefined && product.offer_price < product.price;
 
-  const primaryPhone = settings?.phone_primary || '+880 1711-223344';
+  const primaryPhone = settings?.phone_primary || '+880 1581-291614';
   const rawPhone = primaryPhone.replace(/[^0-9+]/g, '');
   const rawWhatsApp = (settings?.whatsapp_number || primaryPhone).replace(/[^0-9]/g, '');
 
