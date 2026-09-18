@@ -128,7 +128,7 @@ export const initialProducts: Product[] = [
     packaging_en: '10kg & 20kg master export-ready carton boxes.',
     applications_bn: 'প্রিমিয়াম লাউঞ্জ, বিশেষায়িত গ্রিল ও এক্সপোর্ট মার্কেট।',
     applications_en: 'Specialized lounges, indoor grilling, export contracts.',
-    image_url: 'https://images.unsplash.com/photo-1519074069444-1ba4ea16e6f1?q=80&w=1000&auto=format&fit=crop',
+    image_url: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1000&auto=format&fit=crop',
     is_featured: false,
     published: true,
     display_order: 4,
