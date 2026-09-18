@@ -27,15 +27,15 @@ import { isDemoMode } from '@/lib/supabase/config';
 import { createClient } from '@/lib/supabase/client';
 
 const STORAGE_KEYS = {
-  PRODUCTS: 'hasib_products_v1',
-  OFFERS: 'hasib_offers_v1',
+  PRODUCTS: 'hasib_products_v2',
+  OFFERS: 'hasib_offers_v2',
   ORDERS: 'hasib_orders_v1',
-  GALLERY: 'hasib_gallery_v1',
-  REVIEWS: 'hasib_reviews_v1',
+  GALLERY: 'hasib_gallery_v2',
+  REVIEWS: 'hasib_reviews_v2',
   MESSAGES: 'hasib_messages_v1',
-  HOMEPAGE: 'hasib_homepage_v1',
+  HOMEPAGE: 'hasib_homepage_v2',
   SETTINGS: 'hasib_settings_v3',
-  MEDIA: 'hasib_media_v1',
+  MEDIA: 'hasib_media_v2',
   AUTH: 'hasib_admin_auth_v1'
 };
 

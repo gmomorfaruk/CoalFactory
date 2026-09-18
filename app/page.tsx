@@ -129,23 +129,25 @@ export default function HomePage() {
 
           </div>
 
-          {/* Large Factory Photography Showcase */}
-          <div className="mt-12 sm:mt-16 relative rounded-2xl overflow-hidden border border-charcoal-800 shadow-2xl max-w-5xl mx-auto aspect-[16/9] sm:aspect-[21/9]">
-            <Image
-              src={heroImage}
-              alt="Hasib Enterprises Wood Charcoal Factory"
-              fill
-              priority
-              sizes="(max-width: 1200px) 100vw, 1200px"
-              className="object-cover brightness-85 contrast-105"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950/80 via-transparent to-transparent" />
-            <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 text-xs text-charcoal-300 flex items-center justify-between">
-              <span className="font-medium bg-charcoal-950/70 backdrop-blur-sm px-3 py-1 rounded-md border border-charcoal-800">
+          {/* Large Factory Photography & Video Showcase */}
+          <div className="mt-12 sm:mt-16 relative rounded-2xl overflow-hidden border border-charcoal-800 shadow-2xl max-w-5xl mx-auto aspect-[16/9] sm:aspect-[21/9] bg-charcoal-900 group">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              poster="/images/factory-plant.jpeg"
+              className="w-full h-full object-cover brightness-85 contrast-105"
+            >
+              <source src="/images/hero-video.mp4" type="video/mp4" />
+            </video>
+            <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950/80 via-transparent to-transparent pointer-events-none" />
+            <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 text-xs text-charcoal-300 flex items-center justify-between pointer-events-none">
+              <span className="font-medium bg-charcoal-950/80 backdrop-blur-sm px-3 py-1.5 rounded-lg border border-charcoal-800">
                 {language === 'bn' ? 'কয়লা কারখানা — ফুলতলা, খুলনা' : 'Charcoal Plant — Phultala, Khulna'}
               </span>
-              <span className="hidden sm:inline-block bg-charcoal-950/70 backdrop-blur-sm px-3 py-1 rounded-md border border-charcoal-800">
-                {language === 'bn' ? '১০০% প্রাকৃতিক শক্ত কাঠ' : '100% Seasoned Hardwood'}
+              <span className="hidden sm:inline-block bg-charcoal-950/80 backdrop-blur-sm px-3 py-1.5 rounded-lg border border-charcoal-800">
+                {language === 'bn' ? 'সুশৃঙ্খল কার্বনাইজেশন ও বাছাইকৃত মান' : 'Controlled Carbonization & Hand-Graded'}
               </span>
             </div>
           </div>
@@ -153,7 +155,159 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 2. FEATURED PRODUCTS */}
+      {/* 2. THE BUSINESS JOURNEY: Factory → Production → Sorting → Packaging → Dispatch */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-charcoal-900 border border-charcoal-800 text-xs font-semibold text-ember-400 uppercase tracking-wider mb-2">
+            <span>{language === 'bn' ? 'আমাদের কর্মপদ্ধতি' : 'Our Quality Process'}</span>
+          </div>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
+            {language === 'bn' ? 'কারখানা থেকে সরবরাহ: ৫টি সুশৃঙ্খল ধাপ' : 'Factory to Dispatch: A Disciplined Supply Chain'}
+          </h2>
+          <p className="text-xs sm:text-sm text-charcoal-400 mt-2">
+            {language === 'bn' 
+              ? 'আমরা ধোঁয়া বা আগুনের আড়ম্বর নয়, গুরুত্ব দিই কাঠ নির্বাচন, সঠিক রূপান্তর ও পেশাদার ডেলিভারিতে।' 
+              : 'Our focus is on wood selection, clean carbonization, hand-sorting, and secure logistics.'}
+          </p>
+        </div>
+
+        {/* 5-Step Process Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          
+          {/* Step 1: Factory & Raw Hardwood */}
+          <div className="glass-card rounded-xl overflow-hidden border border-charcoal-800 flex flex-col justify-between">
+            <div className="relative h-40 w-full bg-charcoal-900">
+              <Image
+                src="/images/wood-storage.jpeg"
+                alt="Factory and Hardwood Storage"
+                fill
+                sizes="(max-width: 768px) 100vw, 20vw"
+                className="object-cover"
+              />
+              <div className="absolute top-2 left-2 bg-charcoal-950/85 text-[11px] font-extrabold text-ember-400 px-2 py-0.5 rounded border border-charcoal-700">
+                01. {language === 'bn' ? 'কারখানা' : 'Factory'}
+              </div>
+            </div>
+            <div className="p-4 space-y-1.5 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 className="text-sm font-bold text-white">
+                  {language === 'bn' ? 'কাঠ সংগ্রহ ও সিজনিং' : 'Hardwood Sourcing'}
+                </h3>
+                <p className="text-[11px] text-charcoal-400 leading-relaxed mt-1">
+                  {language === 'bn' ? 'পরিপক্ক তেঁতুল ও শক্ত কাঠের প্রাকৃতিক আর্দ্রতা নিয়ন্ত্রণ।' : 'Dense hardwoods naturally seasoned in open yards.'}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Step 2: Controlled Production */}
+          <div className="glass-card rounded-xl overflow-hidden border border-charcoal-800 flex flex-col justify-between">
+            <div className="relative h-40 w-full bg-charcoal-900">
+              <Image
+                src="/images/factory-coal-piles.jpeg"
+                alt="Controlled Carbonization Output"
+                fill
+                sizes="(max-width: 768px) 100vw, 20vw"
+                className="object-cover"
+              />
+              <div className="absolute top-2 left-2 bg-charcoal-950/85 text-[11px] font-extrabold text-ember-400 px-2 py-0.5 rounded border border-charcoal-700">
+                02. {language === 'bn' ? 'উৎপাদন' : 'Production'}
+              </div>
+            </div>
+            <div className="p-4 space-y-1.5 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 className="text-sm font-bold text-white">
+                  {language === 'bn' ? 'সুশৃঙ্খল কার্বনাইজেশন' : 'Controlled Kilns'}
+                </h3>
+                <p className="text-[11px] text-charcoal-400 leading-relaxed mt-1">
+                  {language === 'bn' ? 'নিয়ন্ত্রিত তাপমাত্রায় সুষম কয়লায় রূপান্তর ও নিরাপদ কুলিং।' : 'Gradual thermal curing yielding high carbon content.'}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Step 3: Hand Sorting & Grading */}
+          <div className="glass-card rounded-xl overflow-hidden border border-charcoal-800 flex flex-col justify-between">
+            <div className="relative h-40 w-full bg-charcoal-900">
+              <Image
+                src="/images/hardwood-lump.jpeg"
+                alt="Hand-Sorted Clean Hardwood Lump"
+                fill
+                sizes="(max-width: 768px) 100vw, 20vw"
+                className="object-cover"
+              />
+              <div className="absolute top-2 left-2 bg-charcoal-950/85 text-[11px] font-extrabold text-ember-400 px-2 py-0.5 rounded border border-charcoal-700">
+                03. {language === 'bn' ? 'বাছাইকরণ' : 'Sorting'}
+              </div>
+            </div>
+            <div className="p-4 space-y-1.5 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 className="text-sm font-bold text-white">
+                  {language === 'bn' ? 'গ্রেডিং ও ছাঁকন' : 'Hand Grading'}
+                </h3>
+                <p className="text-[11px] text-charcoal-400 leading-relaxed mt-1">
+                  {language === 'bn' ? 'ধুলাবালি ও অপ্রয়োজনীয় অংশমুক্ত পরিষ্কার খণ্ড নির্বাচন।' : 'Separating dust & fines to ensure clean lump chunks.'}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Step 4: Weatherproof Packaging */}
+          <div className="glass-card rounded-xl overflow-hidden border border-charcoal-800 flex flex-col justify-between">
+            <div className="relative h-40 w-full bg-charcoal-900">
+              <Image
+                src="/images/packaging-sacks.jpeg"
+                alt="Heavy-Duty Weatherproof Packaging"
+                fill
+                sizes="(max-width: 768px) 100vw, 20vw"
+                className="object-cover"
+              />
+              <div className="absolute top-2 left-2 bg-charcoal-950/85 text-[11px] font-extrabold text-ember-400 px-2 py-0.5 rounded border border-charcoal-700">
+                04. {language === 'bn' ? 'প্যাকেজিং' : 'Packaging'}
+              </div>
+            </div>
+            <div className="p-4 space-y-1.5 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 className="text-sm font-bold text-white">
+                  {language === 'bn' ? 'সুরক্ষিত বস্তায় প্যাকিং' : 'Secure Sacks'}
+                </h3>
+                <p className="text-[11px] text-charcoal-400 leading-relaxed mt-1">
+                  {language === 'bn' ? 'আর্দ্রতারোধক পলি-লাইন্ড ব্যাগে সঠিক ওজন নিশ্চিতকরণ।' : 'Poly-lined woven bags preserving bone-dry moisture.'}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Step 5: Nationwide Dispatch */}
+          <div className="glass-card rounded-xl overflow-hidden border border-charcoal-800 flex flex-col justify-between">
+            <div className="relative h-40 w-full bg-charcoal-900">
+              <Image
+                src="/images/dispatch-loading.jpeg"
+                alt="Freight Dispatch and Truck Delivery"
+                fill
+                sizes="(max-width: 768px) 100vw, 20vw"
+                className="object-cover"
+              />
+              <div className="absolute top-2 left-2 bg-charcoal-950/85 text-[11px] font-extrabold text-ember-400 px-2 py-0.5 rounded border border-charcoal-700">
+                05. {language === 'bn' ? 'ডেলিভারি' : 'Dispatch'}
+              </div>
+            </div>
+            <div className="p-4 space-y-1.5 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 className="text-sm font-bold text-white">
+                  {language === 'bn' ? 'সরাসরি ট্রাকে লোডিং' : 'Direct Dispatch'}
+                </h3>
+                <p className="text-[11px] text-charcoal-400 leading-relaxed mt-1">
+                  {language === 'bn' ? 'রেস্তোরাঁ ও পাইকারি ওয়্যারহাউজে সময়মতো সরবরাহ।' : 'Scheduled freight runs to commercial buyers nationwide.'}
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* 3. FEATURED PRODUCTS */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
           <div>
