@@ -33,7 +33,7 @@ const STORAGE_KEYS = {
   GALLERY: 'hasib_gallery_v2',
   REVIEWS: 'hasib_reviews_v2',
   MESSAGES: 'hasib_messages_v1',
-  HOMEPAGE: 'hasib_homepage_v2',
+  HOMEPAGE: 'hasib_homepage_v3',
   SETTINGS: 'hasib_settings_v3',
   MEDIA: 'hasib_media_v2',
   AUTH: 'hasib_admin_auth_v1'

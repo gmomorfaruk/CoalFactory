@@ -23,14 +23,15 @@ import {
   Phone, 
   ArrowRight, 
   CheckCircle2, 
-  Flame, 
+  ShieldCheck, 
   Factory, 
   Sparkles, 
   Truck, 
   UtensilsCrossed, 
   Building2, 
   Store, 
-  Globe 
+  Globe,
+  Layers
 } from 'lucide-react';
 
 export default function HomePage() {
@@ -77,10 +78,11 @@ export default function HomePage() {
   const rawPhone = primaryPhone.replace(/[^0-9+]/g, '');
 
   const iconMap: Record<string, React.ReactNode> = {
-    Flame: <Flame className="w-6 h-6 text-ember-400" />,
+    ShieldCheck: <ShieldCheck className="w-6 h-6 text-ember-400" />,
     Factory: <Factory className="w-6 h-6 text-ember-400" />,
     Sparkles: <Sparkles className="w-6 h-6 text-ember-400" />,
-    Truck: <Truck className="w-6 h-6 text-ember-400" />
+    Truck: <Truck className="w-6 h-6 text-ember-400" />,
+    Layers: <Layers className="w-6 h-6 text-ember-400" />
   };
 
   return (
@@ -400,7 +402,7 @@ export default function HomePage() {
             >
               <div className="space-y-4">
                 <div className="w-12 h-12 rounded-xl bg-charcoal-850 border border-charcoal-700 flex items-center justify-center">
-                  {iconMap[item.icon] || <Flame className="w-6 h-6 text-ember-400" />}
+                  {iconMap[item.icon] || <ShieldCheck className="w-6 h-6 text-ember-400" />}
                 </div>
                 <h3 className="text-base font-bold text-white">
                   {language === 'bn' ? item.title_bn : item.title_en}
@@ -459,7 +461,7 @@ export default function HomePage() {
             </div>
 
             <div className="p-5 rounded-xl bg-charcoal-900 border border-charcoal-800/80 space-y-2">
-              <Flame className="w-8 h-8 text-ember-400 mx-auto" />
+              <UtensilsCrossed className="w-8 h-8 text-ember-400 mx-auto" />
               <h4 className="text-sm font-bold text-white">
                 {language === 'bn' ? 'হোটেল ও ক্যাটারিং' : 'Hotels & Caterers'}
               </h4>

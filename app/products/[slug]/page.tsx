@@ -15,8 +15,8 @@ import {
   AlertCircle, 
   Package, 
   Layers, 
-  Flame, 
-  ShieldCheck 
+  ShieldCheck,
+  UtensilsCrossed 
 } from 'lucide-react';
 
 export default function ProductDetailPage() {
@@ -230,7 +230,7 @@ export default function ProductDetailPage() {
               {applications && (
                 <div className="p-3.5 rounded-lg bg-charcoal-850 border border-charcoal-700/80">
                   <div className="flex items-center gap-2 text-xs font-bold text-white mb-1">
-                    <Flame className="w-3.5 h-3.5 text-ember-400" />
+                    <UtensilsCrossed className="w-3.5 h-3.5 text-ember-400" />
                     <span>{t.products.applications}</span>
                   </div>
                   <p className="text-xs text-charcoal-400">{applications}</p>

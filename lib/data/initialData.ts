@@ -384,7 +384,7 @@ export const initialHomepageContent: HomepageContent = {
       title_en: '100% Dense Hardwood',
       description_bn: 'তেঁতুল, জাম ও প্রাকৃতিক শক্ত কাঠ থেকে তৈরি। কয়লা দ্রুত শেষ হয় না এবং দীর্ঘক্ষণ উচ্চ তাপ ধরে রাখে।',
       description_en: 'Selected dense hardwoods ensuring long steady heat output and exceptional energy efficiency.',
-      icon: 'Flame'
+      icon: 'ShieldCheck'
     },
     {
       title_bn: 'সরাসরি নিজস্ব কারখানা',

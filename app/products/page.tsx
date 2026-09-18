@@ -5,7 +5,7 @@ import { useLanguage } from '@/lib/i18n/context';
 import { getProducts } from '@/lib/data/store';
 import { Product } from '@/types';
 import ProductCard from '@/components/products/ProductCard';
-import { Flame, Phone, ShieldCheck } from 'lucide-react';
+import { Factory, Phone, ShieldCheck } from 'lucide-react';
 import Link from 'next/link';
 
 export default function ProductsPage() {
@@ -35,7 +35,7 @@ export default function ProductsPage() {
       {/* Header Section */}
       <div className="max-w-3xl space-y-4">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-charcoal-900 border border-charcoal-800 text-xs font-semibold text-ember-400">
-          <Flame className="w-3.5 h-3.5 text-ember-500" />
+          <Factory className="w-3.5 h-3.5 text-ember-500" />
           <span>{language === 'bn' ? 'সরাসরি নিজস্ব কারখানা' : 'Direct Factory Stock'}</span>
         </div>
         <h1 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
