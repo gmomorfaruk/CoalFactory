@@ -88,25 +88,43 @@ export default function HomePage() {
   return (
     <div className="space-y-20 sm:space-y-28 pb-16">
       
-      {/* 1. HERO SECTION */}
-      <section className="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden bg-coal-grid">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          <div className="max-w-3xl mx-auto text-center space-y-6">
+      {/* 1. CINEMATIC BACKGROUND VIDEO HERO SECTION */}
+      <section className="relative min-h-[75vh] sm:min-h-[82vh] flex items-center justify-center overflow-hidden border-b border-charcoal-800/80">
+        
+        {/* Background Video with Dual Contrast Overlays */}
+        <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            poster="/images/factory-plant.jpeg"
+            className="w-full h-full object-cover brightness-[0.40] contrast-110 scale-105"
+          >
+            <source src="/images/hero-video.mp4" type="video/mp4" />
+          </video>
+          {/* Gradients ensuring flawless text readability */}
+          <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-charcoal-950/70 to-charcoal-950/85" />
+          <div className="absolute inset-0 bg-coal-grid opacity-30" />
+        </div>
+
+        {/* Hero Content Layer */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 text-center">
+          <div className="max-w-3xl mx-auto space-y-6">
             
             {/* Small subtle badge */}
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-charcoal-900 border border-charcoal-700/80 text-xs font-semibold text-ember-400 shadow-sm">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-charcoal-950/85 backdrop-blur-md border border-charcoal-700/80 text-xs font-semibold text-ember-400 shadow-xl">
               <span className="w-2 h-2 rounded-full bg-ember-500 animate-pulse" />
               <span>{t.hero.badge}</span>
             </div>
 
             {/* Bold Headline */}
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight drop-shadow-lg">
               {heroTitle}
             </h1>
 
             {/* Natural Copy */}
-            <p className="text-base sm:text-lg text-charcoal-300 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg text-charcoal-200 max-w-2xl mx-auto leading-relaxed drop-shadow">
               {heroSubtitle}
             </p>
 
@@ -122,38 +140,26 @@ export default function HomePage() {
 
               <Link
                 href="/contact"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-charcoal-850 hover:bg-charcoal-800 border border-charcoal-700 hover:border-charcoal-600 text-white font-semibold px-8 py-3.5 rounded-xl transition-all active:scale-95"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-charcoal-900/85 hover:bg-charcoal-850 backdrop-blur-md border border-charcoal-600 hover:border-charcoal-500 text-white font-semibold px-8 py-3.5 rounded-xl transition-all active:scale-95 shadow-md"
               >
                 <span>{t.hero.ctaOrder}</span>
                 <ArrowRight className="w-4 h-4 text-charcoal-400" />
               </Link>
             </div>
 
-          </div>
-
-          {/* Large Factory Photography & Video Showcase */}
-          <div className="mt-12 sm:mt-16 relative rounded-2xl overflow-hidden border border-charcoal-800 shadow-2xl max-w-5xl mx-auto aspect-[16/9] sm:aspect-[21/9] bg-charcoal-900 group">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              poster="/images/factory-plant.jpeg"
-              className="w-full h-full object-cover brightness-85 contrast-105"
-            >
-              <source src="/images/hero-video.mp4" type="video/mp4" />
-            </video>
-            <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950/80 via-transparent to-transparent pointer-events-none" />
-            <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 text-xs text-charcoal-300 flex items-center justify-between pointer-events-none">
-              <span className="font-medium bg-charcoal-950/80 backdrop-blur-sm px-3 py-1.5 rounded-lg border border-charcoal-800">
+            {/* Plant Location & Quality Verification Pills */}
+            <div className="pt-8 flex flex-wrap items-center justify-center gap-3 text-xs text-charcoal-300">
+              <span className="inline-flex items-center gap-1.5 bg-charcoal-950/85 backdrop-blur-md px-3.5 py-1.5 rounded-lg border border-charcoal-800">
+                <span className="w-2 h-2 rounded-full bg-emerald-500" />
                 {language === 'bn' ? 'কয়লা কারখানা — ফুলতলা, খুলনা' : 'Charcoal Plant — Phultala, Khulna'}
               </span>
-              <span className="hidden sm:inline-block bg-charcoal-950/80 backdrop-blur-sm px-3 py-1.5 rounded-lg border border-charcoal-800">
+              <span className="inline-flex items-center gap-1.5 bg-charcoal-950/85 backdrop-blur-md px-3.5 py-1.5 rounded-lg border border-charcoal-800">
+                <span className="w-2 h-2 rounded-full bg-ember-500" />
                 {language === 'bn' ? 'সুশৃঙ্খল কার্বনাইজেশন ও বাছাইকৃত মান' : 'Controlled Carbonization & Hand-Graded'}
               </span>
             </div>
-          </div>
 
+          </div>
         </div>
       </section>
 
