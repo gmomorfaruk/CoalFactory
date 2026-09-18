@@ -166,7 +166,7 @@ export default function Footer() {
                     {language === 'bn' ? 'কয়লা কারখানা:' : 'Plant Location:'}
                   </span>
                   <span className="text-charcoal-400 leading-snug">
-                    {factoryAddr || (language === 'bn' ? 'ঘাটাইল, টাঙ্গাইল, বাংলাদেশ' : 'Ghatail, Tangail, Bangladesh')}
+                    {factoryAddr || (language === 'bn' ? 'মশিয়ালী, ফুলতলা, খুলনা - ৯২০৬, বাংলাদেশ' : 'Moshiyali, Phultala, Khulna - 9206, Bangladesh')}
                   </span>
                 </div>
               </div>
@@ -181,19 +181,17 @@ export default function Footer() {
                   </span>
                 </div>
               </div>
-              {settings?.map_embed_url && (
-                <div className="pt-1">
-                  <a
-                    href="https://maps.google.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-ember-400 hover:text-ember-300 text-xs font-medium transition-colors"
-                  >
-                    <span>{language === 'bn' ? 'গুগল ম্যাপে দেখুন' : 'View on Google Maps'}</span>
-                    <ExternalLink className="w-3 h-3" />
-                  </a>
-                </div>
-              )}
+              <div className="pt-1">
+                <a
+                  href="https://maps.app.goo.gl/tkQeqxzNjQrJx12J9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-ember-400 hover:text-ember-300 text-xs font-semibold transition-colors"
+                >
+                  <span>{language === 'bn' ? 'গুগল ম্যাপে কারখানার অবস্থান দেখুন' : 'View Plant on Google Maps'}</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
+              </div>
             </div>
           </div>
 

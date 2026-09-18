@@ -130,10 +130,10 @@ create table if not exists public.site_settings (
     email text default 'support.hasibenterprise@gmail.com',
     office_address_bn text default 'মিরপুর, ঢাকা - ১২১৬, বাংলাদেশ',
     office_address_en text default 'Mirpur, Dhaka - 1216, Bangladesh',
-    factory_address_bn text default 'ঘাটাইল, টাঙ্গাইল, বাংলাদেশ',
-    factory_address_en text default 'Ghatail, Tangail, Bangladesh',
-    map_embed_url text,
-    social_links jsonb default '{"facebook": "https://facebook.com", "whatsapp": "https://wa.me/8801700000000", "instagram": "", "youtube": "", "tiktok": "", "linkedin": ""}'::jsonb,
+    factory_address_bn text default 'হাসিব কোল ফ্যাক্টরি, মশিয়ালী, ফুলতলা, খুলনা - ৯২০৬, বাংলাদেশ',
+    factory_address_en text default 'Hasib Charcoal Plant, Moshiyali, Phultala, Khulna - 9206, Bangladesh',
+    map_embed_url text default 'https://maps.google.com/maps?q=22.9447679,89.4883762&z=15&output=embed',
+    social_links jsonb default '{"facebook": "https://facebook.com/hasibenterprisesbd", "whatsapp": "https://wa.me/8801581291614", "instagram": "", "youtube": "", "tiktok": "", "linkedin": ""}'::jsonb,
     updated_at timestamp with time zone default timezone('utc'::text, now()) not null,
     constraint single_row_settings check (id = 1)
 );

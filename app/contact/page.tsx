@@ -171,7 +171,7 @@ function ContactContent() {
                 <div>
                   <span className="font-bold text-white block">{t.contact.factory}</span>
                   <span className="text-charcoal-400">
-                    {factoryAddr || (language === 'bn' ? 'হাসিব কয়লা কারখানা, ঘাটাইল, টাঙ্গাইল, বাংলাদেশ' : 'Hasib Plant, Ghatail, Tangail, Bangladesh')}
+                    {factoryAddr || (language === 'bn' ? 'হাসিব কয়লা কারখানা, মশিয়ালী, ফুলতলা, খুলনা - ৯২০৬, বাংলাদেশ' : 'Hasib Plant, Moshiyali, Phultala, Khulna - 9206, Bangladesh')}
                   </span>
                 </div>
               </div>
@@ -197,17 +197,30 @@ function ContactContent() {
 
           </div>
 
-          {/* Google Map Embed */}
-          <div className="rounded-2xl overflow-hidden border border-charcoal-800 bg-charcoal-900 h-64 relative">
-            <iframe
-              src={settings?.map_embed_url || "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116834.00977793836!2d90.33728812613045!3d23.801323719468085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0e96fce29dd%3A0x6ccd9e51ab9ddf4f!2sMirpur%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1710000000000!5m2!1sen!2sbd"}
-              width="100%"
-              height="100%"
-              style={{ border: 0, filter: 'grayscale(0.8) invert(0.9) contrast(1.2)' }}
-              allowFullScreen={false}
-              loading="lazy"
-              title="Hasib Enterprises Map Location"
-            />
+          {/* Google Map Embed & Navigation */}
+          <div className="space-y-2">
+            <div className="rounded-2xl overflow-hidden border border-charcoal-800 bg-charcoal-900 h-64 relative shadow-lg">
+              <iframe
+                src={settings?.map_embed_url || "https://maps.google.com/maps?q=22.9447679,89.4883762&z=15&output=embed"}
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={false}
+                loading="lazy"
+                title="Hasib Enterprises Map Location"
+              />
+            </div>
+            <div className="text-right">
+              <a
+                href="https://maps.app.goo.gl/tkQeqxzNjQrJx12J9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-ember-400 hover:text-ember-300 transition-colors"
+              >
+                <span>{language === 'bn' ? 'গুগল ম্যাপে নেভিগেশন ও রুট দেখুন' : 'Get Directions on Google Maps'}</span>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
+            </div>
           </div>
 
         </div>

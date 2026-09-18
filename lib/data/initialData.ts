@@ -369,9 +369,9 @@ export const initialSiteSettings: SiteSettings = {
   email: 'support.hasibenterprise@gmail.com',
   office_address_bn: 'প্লট নং ১২, রোড ৪, ব্লক সি, মিরপুর, ঢাকা - ১২১৬',
   office_address_en: 'Plot 12, Road 4, Block C, Mirpur, Dhaka - 1216, Bangladesh',
-  factory_address_bn: 'হাসিব কোল ফ্যাক্টরি চত্বর, ঘাটাইল, টাঙ্গাইল, বাংলাদেশ',
-  factory_address_en: 'Hasib Charcoal Plant, Ghatail, Tangail, Bangladesh',
-  map_embed_url: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116834.00977793836!2d90.33728812613045!3d23.801323719468085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0e96fce29dd%3A0x6ccd9e51ab9ddf4f!2sMirpur%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1710000000000!5m2!1sen!2sbd',
+  factory_address_bn: 'হাসিব কোল ফ্যাক্টরি, মশিয়ালী, ফুলতলা, খুলনা - ৯২০৬, বাংলাদেশ',
+  factory_address_en: 'Hasib Charcoal Plant, Moshiyali, Phultala, Khulna - 9206, Bangladesh',
+  map_embed_url: 'https://maps.google.com/maps?q=22.9447679,89.4883762&z=15&output=embed',
   social_links: {
     facebook: 'https://facebook.com/hasibenterprisesbd',
     whatsapp: 'https://wa.me/8801581291614',

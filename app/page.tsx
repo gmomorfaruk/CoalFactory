@@ -142,7 +142,7 @@ export default function HomePage() {
             <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950/80 via-transparent to-transparent" />
             <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 text-xs text-charcoal-300 flex items-center justify-between">
               <span className="font-medium bg-charcoal-950/70 backdrop-blur-sm px-3 py-1 rounded-md border border-charcoal-800">
-                {language === 'bn' ? 'কয়লা কারখানা — ঘাটাইল, টাঙ্গাইল' : 'Charcoal Plant — Ghatail, Tangail'}
+                {language === 'bn' ? 'কয়লা কারখানা — ফুলতলা, খুলনা' : 'Charcoal Plant — Phultala, Khulna'}
               </span>
               <span className="hidden sm:inline-block bg-charcoal-950/70 backdrop-blur-sm px-3 py-1 rounded-md border border-charcoal-800">
                 {language === 'bn' ? '১০০% প্রাকৃতিক শক্ত কাঠ' : '100% Seasoned Hardwood'}
