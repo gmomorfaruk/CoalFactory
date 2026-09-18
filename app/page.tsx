@@ -151,7 +151,7 @@ export default function HomePage() {
             <div className="pt-8 flex flex-wrap items-center justify-center gap-3 text-xs text-charcoal-300">
               <span className="inline-flex items-center gap-1.5 bg-charcoal-950/85 backdrop-blur-md px-3.5 py-1.5 rounded-lg border border-charcoal-800">
                 <span className="w-2 h-2 rounded-full bg-emerald-500" />
-                {language === 'bn' ? 'কয়লা কারখানা — ফুলতলা, খুলনা' : 'Charcoal Plant — Phultala, Khulna'}
+                {language === 'bn' ? 'কয়লা কারখানা — সিদ্ধিপাশা, ফুলতলা, খুলনা' : 'Charcoal Plant — Siddhipasha, Phultala, Khulna'}
               </span>
               <span className="inline-flex items-center gap-1.5 bg-charcoal-950/85 backdrop-blur-md px-3.5 py-1.5 rounded-lg border border-charcoal-800">
                 <span className="w-2 h-2 rounded-full bg-ember-500" />

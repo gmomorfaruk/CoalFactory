@@ -171,7 +171,7 @@ function ContactContent() {
                 <div>
                   <span className="font-bold text-white block">{t.contact.factory}</span>
                   <span className="text-charcoal-400">
-                    {factoryAddr || (language === 'bn' ? 'হাসিব কয়লা কারখানা, মশিয়ালী, ফুলতলা, খুলনা - ৯২০৬, বাংলাদেশ' : 'Hasib Plant, Moshiyali, Phultala, Khulna - 9206, Bangladesh')}
+                    {factoryAddr || (language === 'bn' ? 'হাসিব কয়লা কারখানা, সিদ্ধিপাশা, ফুলতলা, খুলনা - ৯২০৬, বাংলাদেশ' : 'Hasib Plant, Siddhipasha, Phultala, Khulna - 9206, Bangladesh')}
                   </span>
                 </div>
               </div>

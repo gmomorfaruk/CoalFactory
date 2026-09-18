@@ -159,8 +159,8 @@ export const initialGallery: GalleryItem[] = [
     id: 'gal-1',
     title_bn: 'আমাদের আধুনিক কয়লা কারখানা ও প্ল্যান্ট',
     title_en: 'Charcoal Plant & Factory Grounds',
-    description_bn: 'খুলনার ফুলতলায় অবস্থিত হাসিব এন্টারপ্রাইজের সুশৃঙ্খল ও পরিবেশসম্মত উৎপাদন চত্বর।',
-    description_en: 'Hasib Enterprises production facility located in Moshiyali, Phultala, Khulna.',
+    description_bn: 'খুলনার ফুলতলার সিদ্ধিপাশায় অবস্থিত হাসিব এন্টারপ্রাইজের সুশৃঙ্খল ও পরিবেশসম্মত উৎপাদন চত্বর।',
+    description_en: 'Hasib Enterprises production facility located in Siddhipasha, Phultala, Khulna.',
     image_url: '/images/factory-plant.jpeg',
     category: 'Factory',
     display_order: 1,
@@ -389,8 +389,8 @@ export const initialHomepageContent: HomepageContent = {
     {
       title_bn: 'সরাসরি নিজস্ব কারখানা',
       title_en: 'Direct From Our Factory',
-      description_bn: 'খুলনার ফুলতলায় নিজস্ব আধুনিক প্ল্যান্ট। কোনো মধ্যস্থতাকারী নেই, তাই নিশ্চিত ন্যায্য মূল্য ও শতভাগ সঠিক ওজন।',
-      description_en: 'Manufactured at our own plant in Moshiyali, Phultala, Khulna. No middlemen, transparent rates, honest weights.',
+      description_bn: 'খুলনার ফুলতলার সিদ্ধিপাশায় নিজস্ব আধুনিক প্ল্যান্ট। কোনো মধ্যস্থতাকারী নেই, তাই নিশ্চিত ন্যায্য মূল্য ও শতভাগ সঠিক ওজন।',
+      description_en: 'Manufactured at our own plant in Siddhipasha, Phultala, Khulna. No middlemen, transparent rates, honest weights.',
       icon: 'Factory'
     },
     {
@@ -417,8 +417,8 @@ export const initialSiteSettings: SiteSettings = {
   email: 'support.hasibenterprise@gmail.com',
   office_address_bn: 'প্লট নং ১২, রোড ৪, ব্লক সি, মিরপুর, ঢাকা - ১২১৬',
   office_address_en: 'Plot 12, Road 4, Block C, Mirpur, Dhaka - 1216, Bangladesh',
-  factory_address_bn: 'হাসিব কোল ফ্যাক্টরি, মশিয়ালী, ফুলতলা, খুলনা - ৯২০৬, বাংলাদেশ',
-  factory_address_en: 'Hasib Charcoal Plant, Moshiyali, Phultala, Khulna - 9206, Bangladesh',
+  factory_address_bn: 'হাসিব কোল ফ্যাক্টরি, সিদ্ধিপাশা, ফুলতলা, খুলনা - ৯২০৬, বাংলাদেশ',
+  factory_address_en: 'Hasib Charcoal Plant, Siddhipasha, Phultala, Khulna - 9206, Bangladesh',
   map_embed_url: 'https://maps.google.com/maps?q=22.9447679,89.4883762&z=15&output=embed',
   social_links: {
     facebook: 'https://facebook.com/hasibenterprisesbd',

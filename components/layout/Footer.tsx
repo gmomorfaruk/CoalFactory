@@ -166,7 +166,7 @@ export default function Footer() {
                     {language === 'bn' ? 'কয়লা কারখানা:' : 'Plant Location:'}
                   </span>
                   <span className="text-charcoal-400 leading-snug">
-                    {factoryAddr || (language === 'bn' ? 'মশিয়ালী, ফুলতলা, খুলনা - ৯২০৬, বাংলাদেশ' : 'Moshiyali, Phultala, Khulna - 9206, Bangladesh')}
+                    {factoryAddr || (language === 'bn' ? 'সিদ্ধিপাশা, ফুলতলা, খুলনা - ৯২০৬, বাংলাদেশ' : 'Siddhipasha, Phultala, Khulna - 9206, Bangladesh')}
                   </span>
                 </div>
               </div>
